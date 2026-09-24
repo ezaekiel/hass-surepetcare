@@ -35,7 +35,7 @@ def index_attr(seq, idx, attr=None, default=None):
         if attr is None:
             return seq[idx]
         return getattr(seq[idx], attr, default)
-    except (IndexError, TypeError, AttributeError):
+    except (IndexError, TypeError, AttributeError):  # fmt: skip
         return default
 
 

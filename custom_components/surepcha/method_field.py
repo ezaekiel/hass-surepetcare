@@ -57,7 +57,7 @@ def get_by_path(obj, path):
                 return None
             try:
                 obj = obj[int(idx)]
-            except (IndexError, ValueError, TypeError, KeyError):
+            except (IndexError, ValueError, TypeError, KeyError):  # fmt: skip
                 return None
         else:
             if isinstance(obj, dict):
