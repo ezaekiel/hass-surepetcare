@@ -451,7 +451,7 @@ def _device_picker_options(devices: dict[str, dict[str, Any]]) -> list[tuple[str
         product_id = device.get(PRODUCT_ID)
         try:
             product_name = ProductId(product_id).name
-        except (TypeError, ValueError):
+        except (TypeError, ValueError): #  fmt: skip
             product_name = str(product_id) if product_id is not None else "UNKNOWN"
 
         label = (
