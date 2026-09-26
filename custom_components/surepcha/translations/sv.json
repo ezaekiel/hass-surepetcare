@@ -61,7 +61,7 @@
       "configure_device": {
         "title": "Konfigurera {device_name}",        "description": "Ange hur ofta den här enheten ska uppdateras. Standardvärdet är 300 sekunder (5 minuter). Kortare intervall innebär fler förfrågningar; 15 sekunder ger till exempel 20 gånger fler förfrågningar än 300 sekunder. Ange ett valfritt värde mellan 5 och 86400 sekunder.",
         "data": {
-          "polling_speed": "Uppdateringsintervall (sekunder)",
+          "polling_speed": "Uppdateringsintervall för enheten (sekunder)",
           "location": "Plats",
           "location_inside": "Inomhusplats",
           "location_outside": "Utomhusplats"
